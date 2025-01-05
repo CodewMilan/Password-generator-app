@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="wrapper w-screen h-screen bg-black">
+    <div class="wrapper w-screen h-screen bg-black flex flex-col items-center justify-center ">
         <!--heading-->
         <div>
             <h1 class="text-white">PASSWORD GENERATOR</h1>
@@ -18,7 +18,7 @@
         <div class="password">
 
             <input readonly placeholder="Password" data-passwordDisplay>
-            <button>
+            <button onclick="copyContent()" data-copy>
                 <span Data-CopyMsg ></span>
                 <img src="copy.svg" width="23" height="23">
             </button>
@@ -37,7 +37,7 @@
             <input type="range" min="1" max="20" class="slider" step="1" slider-data>
             <!--checkboxes-->
             <div class="checkboxes text-white">
-                 <input type="checkbox" id="UPPERCASE">
+                 <input type="checkbox" id="uppercase">
                 <label for="UPPERCASE">Include Uppercase letters</label>
                 <br>
             </div>
@@ -62,7 +62,7 @@
             <div color-data></div>
         </div>
         <!--generate button-->
-        <div>
+        <div class="generateButton">
             <button>
                 Generate Password
             </button>
