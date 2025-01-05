@@ -15,22 +15,62 @@
         </div>
 
         <!--password-->
-        <div>
+        <div class="password">
 
             <input readonly placeholder="Password" data-passwordDisplay>
             <button>
                 <span Data-CopyMsg ></span>
-                <img src="copy.svg" alt="" class="text-white">
+                <img src="copy.svg" width="23" height="23">
             </button>
 
 
         </div>
         <!---the password generator-->
-        <div>
+        <div class="generate">
+            <div class="length-container"> 
+             <p>password length</p>
+             <p length-data>0</p>  
 
+            </div>
+            <!--slider-->
+
+            <input type="range" min="1" max="20" class="slider" step="1" slider-data>
+            <!--checkboxes-->
+            <div class="checkboxes text-white">
+                 <input type="checkbox" id="UPPERCASE">
+                <label for="UPPERCASE">Include Uppercase letters</label>
+                <br>
+            </div>
+            <div class="checkboxes text-white">
+                <input type="checkbox" id="lowercase">
+                <label for="lowercase">Include Lowercase letters</label>
+                <br>
+            </div>
+            <div class="checkboxes text-white">
+                <input type="checkbox" id="symbols">
+                <label for="symbols">Include symbols</label>
+                
+            </div>
+            <div class="checkboxes text-white">
+                <input type="checkbox" id="numbers">
+                <label for="numbers">Include numbers</label>
+            </div>
         </div>
-    </div>
+        <!--strength-->
+        <div>
+            <p>password strength</p>
+            <div color-data></div>
+        </div>
+        <!--generate button-->
+        <div>
+            <button>
+                Generate Password
+            </button>
+        </div>
+
+
     
     <script src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js" integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
